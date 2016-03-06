@@ -1,0 +1,31 @@
+$small:                30em;   // 480px
+$small-medium:         37.5em; // 600px
+$medium:               48em;   // 768px
+$large:                64em;   // 1024px
+
+$font-family-heading: 'Bevan', serif;
+$font-family-body:    'Lato', sans-serif;
+
+$base-size:           16;
+
+$brown:               #583c2a;
+$blue:                #2e96a0;
+$off-white:           #f7f2da;
+$tan:                 #e5d4b7;
+
+$body-color:          #222;
+$bg-color:            #e6e7df;
+$black:               #222;
+$gray:                #666;
+$gray-light:          #999;
+$white:               #fff;
+//$off-white:           #eee;
+$yellow:              #eee8aa;
+//$brown:               #865f42;
+$table-bg:            #ebece1;
+
+$link:                $brown;
+$header-link:         $yellow;
+$header-link-hover:   darken($header-link, 20%);
+$link-visited:        $link;
+$link-hover:          darken($link, 20%);

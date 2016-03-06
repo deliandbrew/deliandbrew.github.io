@@ -1,0 +1,255 @@
+body {
+  background-color: $tan;
+}
+
+.drop-one {
+  margin-top: 1em;
+}
+
+.drop-two {
+  margin-top: 2em;
+}
+
+.big {
+  font-size: 1.25em;
+}
+
+.no-float {
+  float: none;
+}
+
+header {
+  h1 {
+    @extend %visually-hide;
+  }
+
+  img {
+    display: block;
+
+    @include bp($medium) {
+      margin-left: -3em;
+    }
+  }
+}
+
+.tagline {
+  background-color: $brown;
+  color: $white;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  padding: 1em;
+
+  @include bp($small) {
+    border-bottom: .5em solid $blue;
+    border-top: .5em solid $blue;
+  }
+
+  @include bp($medium) {
+    margin-bottom: 5%;
+    margin-top: -18%;
+  }
+
+
+  p {
+    font-size: 1.25em;
+    margin: 0;
+    text-align: center;
+
+    @include bp($medium) {
+      font-size: 1.5em;
+      text-align: left;
+    }
+
+    span {
+      color: $yellow;
+    }
+  }
+}
+
+.section {
+  @extend %clearfix;
+  margin: 0;
+  padding: 2em 0 2.5em;
+}
+
+.odd {
+  background-color: $blue;
+  color: $off-white;
+
+  h2, h3 {
+    color: $white;
+    font-weight: 400;
+  }
+
+  a {
+    color: $tan;
+  }
+}
+
+.section-head {
+  font-size: 3.5em;
+  margin-bottom: .5em;
+  text-align: center;
+}
+
+.intro-head {
+  font-size: 1.25em;
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+.note {
+  font-size: 85%;
+}
+
+.header {
+  background-color: $brown;
+  color: $white;
+  margin-top: 0;
+  padding: 2em 0;
+
+  @include bp($small) {
+    padding: 3.25em 0 1em;
+  }
+
+  h1 {
+    color: $white;
+    font-size: 3em;
+    margin-bottom: .25em;
+    margin-top: 0;
+    text-shadow: 0 .05em .05em $black;
+
+    @include bp($small) {
+      font-size: 3.5em;
+    }
+  }
+
+  h2 {
+    color: $off-white;
+    font-size: 1.25em;
+    margin-bottom: .5em;
+    margin-top: .6em;
+
+    span {
+      color: $header-link;
+    }
+  }
+}
+
+.intro {
+  font-size: 1.25em;
+
+  span {
+    color: $header-link;
+  }
+}
+
+.nav {
+  margin-top: -1em;
+
+  @include bp($small) {
+    margin-top: 1.5em;
+  }
+
+  a {
+    background-color: $blue;
+    color: $white;
+    display: block;
+    font-size: 1.5em;
+    font-family: $font-family-heading;
+    margin: .15em -.833333em;
+    padding: .35em 0;
+    text-align: center;
+
+    @include bp($small) {
+      //border-radius: .5em;
+      margin: .1em 0;
+      padding: .2em;
+    }
+
+    &:visited {
+      color: $white;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: lighten($brown, 10%);
+    }
+  }
+}
+
+.spaced span {
+  margin-right: .5em;
+}
+
+.big {
+  font-size: 120%;
+}
+
+.footer {
+  background-color: $brown;
+  color: $white;
+  margin-bottom: 0;
+  padding: 1.5em 0;
+  text-align: center;
+
+  a {
+    color: $header-link;
+
+    &:visited {
+      color: $header-link;
+    }
+
+    &:hover,
+    &:focus {
+      color: $header-link-hover;
+    }
+  }
+}
+
+.image-frame {
+  //box-shadow: .2em .2em .3em $gray-light;
+  border: .5em solid $blue;
+  display: block;
+  margin: 0 auto 1.5em;
+
+  @include bp($medium) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+table {
+  margin-bottom: 1em;
+  width: 100%;
+
+  tr {
+    background-color: rgba($off-white, .4);
+    color: $black;
+
+    .odd & {
+      background-color: darken($blue, 5%);
+      color: $white;
+    }
+
+    &:nth-child(2n+1) {
+      //background-color: lighten($table-bg, 5%);
+    }
+  }
+
+  td {
+    padding: .5em;
+  }
+}
+
+.amt {
+  text-align: right;
+}
+
+.trim {
+  display: none;
+
+  @include bp($medium) {
+    display: block;
+  }
+}

@@ -1,0 +1,20 @@
+name: Deli and Brew
+description: "The Deli and Brew is a deli and convenience store located in Troy, New York that is famous for their giant subs and amazing pizza."
+keywords: "Deli and Brew, Troy, New York, Pizza, Subs, HVCC"
+url: http://deliandbrew.com
+
+# Local server settings
+port: 4000
+host: 127.0.0.1
+
+sass:
+  sass_dir: _sass
+  style: :compressed
+
+lsi: false
+markdown: kramdown
+source: .
+destination: _site
+timezone: America/New_York
+
+exclude: [Gemfile, Gemfile.lock]
